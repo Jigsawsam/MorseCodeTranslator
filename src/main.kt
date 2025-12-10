@@ -1,5 +1,5 @@
 // Main.kt
-// Improved Kotlin Morse Code Translator
+// Kotlin Morse Code Translator
 
 import java.time.*
 
@@ -41,7 +41,7 @@ class MorseTranslator {
 
     private fun buildInverseMap(): MutableMap<String, Char> =
         morseMap.entries.associate { it.value to it.key }.toMutableMap()
-
+    // History of translations
     private var history: MutableList<Translation> = mutableListOf()
 
     fun encodeToMorse(input: String): String {
